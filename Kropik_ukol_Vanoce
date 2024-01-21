@@ -1,0 +1,89 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úkol</title>
+    <style>
+        .wrapper{
+            border: 2px solid black;
+            min-height: 97vh;
+        }
+        .stromek{
+            height: 400px;
+            width: 375px;
+            position: absolute;
+            right: 20px;
+            bottom: 50px;
+            animation: třesesenadarečky 0.1s linear infinite;
+        }
+        @keyframes třesesenadarečky{
+            100%{
+                translate: 2px 0px;
+            }
+            50%{
+                translate: -2px 0px;
+            }
+        }
+
+        .stickman{
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .vaječňák{
+            position: relative;
+            width: 150px;
+            height: 125px;
+            left: 45vh;
+            top: 7vh;
+            animation: rotacevajecnaku 1s linear infinite;
+        }
+        @keyframes rotacevajecnaku{
+            100%{
+                rotate: 360deg;
+            }
+        }
+
+        .star{
+            height: 100px;
+            width: 100px;
+            animation: trasa 3s linear infinite;
+        }
+        
+        @keyframes trasa{
+            100%{
+                translate: -675px 0px;
+                rotate: 360deg;
+            }
+            75%{
+                translate: 0 675px;
+                rotate: 360deg;
+            }
+            50%{
+                translate: 0px 675px;
+                rotate: 360deg;
+            }
+            25%{
+                translate: 675px 0px;
+                rotate: 360deg;
+            }
+            /*pane učiteli já se omlouvám, ale prostě tomu nějak nerozumim těm pohybům tady */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="star" src="star.png" alt="">
+        <img class="stromek" src="pngegg (1).png" alt="">
+        <div class="stickman">
+            <img class="stickman" src="stickman.png" alt="">
+            <img class="vaječňák" src="vaječňák.png" alt="">
+        </div>
+        
+    </div>
+</body>
+</html>
